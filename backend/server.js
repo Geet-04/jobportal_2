@@ -37,7 +37,7 @@ app.use(cookieParser()); //Parses cookies from the request header and makes them
 //Allow cookies/auth headers to be sent with those requests.
 //Apply this rule to all routes in your Express app.
 const corsOption = {
-   origin:'http://localhost:5173',
+   origin:'https://jobportal-2-qbmj.onrender.com/',
    credentials: true
 }
 app.use(cors(corsOption));

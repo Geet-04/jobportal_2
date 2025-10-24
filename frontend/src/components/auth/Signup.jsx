@@ -61,11 +61,7 @@ const Signup = () => {
    if(input.file){
       formData.append("file",input.file);
    }
-   // Send a POST request using axios to your backend API endpoint.
-   //    - `${USER_API_END_POINT}/register` → Your API route for registration
-   //    - Pass `formData` (with all user inputs)
-   //    - Add headers: "multipart/form-data" → tells backend we’re sending files + text
-   //    - withCredentials:true → include cookies (for auth/session handling)
+   
    try{
       dispatch(setLoading(true));
       const res= await axios.post(`${USER_API_END_POINT}/register`, formData,{
